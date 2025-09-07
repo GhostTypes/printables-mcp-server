@@ -24,13 +24,14 @@ mcp = FastMCP(
 )
 
 @mcp.tool()
-def search_printables(search_term: str, limit: int = 5) -> List[Dict[str, Any]]:
+def search_printables(search_term: str, limit: int = 5, ordering: str = "best_match") -> List[Dict[str, Any]]:
     """
     Search Printables.com for 3D models.
     
     Args:
         search_term: The search query (e.g. "benchy", "miniature", "vase")
         limit: Maximum number of results to return (default: 5, max: 50)
+        ordering: Search ordering - one of: "best_match", "popular", "latest", "rating", "makes_count" (default: "best_match")
     
     Returns:
         List of model dictionaries containing id, name, slug, stats, user info, and image
@@ -39,8 +40,8 @@ def search_printables(search_term: str, limit: int = 5) -> List[Dict[str, Any]]:
         # Validate limit
         limit = max(1, min(limit, 50))
         
-        logger.info(f"Searching Printables for '{search_term}' with limit {limit}")
-        results = printables_api.search_models(search_term, limit)
+        logger.info(f"Searching Printables for '{search_term}' with limit {limit} and ordering {ordering}")
+        results = printables_api.search_models(search_term, limit, ordering)
         
         if not results:
             return []
