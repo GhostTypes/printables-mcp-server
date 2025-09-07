@@ -50,22 +50,29 @@ This feature fetches the description content directly from a model's web page.
 1.  Clone the repository to your local machine.
 
     ```bash
-    # 1. Clone the repository
     git clone https://github.com/GhostTypes/printables-mcp-server.git
     ```
 
 2.  Navigate to the cloned repository's directory.
 
     ```bash
-    # 2. Navigate to the project directory
     cd printables-mcp-server
     ```
 
 3.  Install the required Python dependencies.
 
     ```bash
-    # 3. Install dependencies
     pip install -r requirements.txt
     ```
 
-4.  Add to your desired MCP client 
+4.  Add to your desired MCP client (example for VSCode)
+
+    ```bash
+    "printables-mcp": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"path/to/printables_mcp_server.py"
+			]
+		}
+    ```
