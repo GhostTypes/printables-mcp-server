@@ -42,7 +42,9 @@
   <h2>Model Search</h2>
 </div>
 
+<p align="center">
 This feature enables users to query the Printables.com database for 3D models.
+</p>
 
 <div align="center">
 <table>
@@ -71,7 +73,9 @@ This feature enables users to query the Printables.com database for 3D models.
   <h2>File Retrieval</h2>
 </div>
 
+<p align="center">
 This feature provides access to the files for a given model.
+</p>
 
 <div align="center">
 <table>
@@ -96,7 +100,9 @@ This feature provides access to the files for a given model.
   <h2>Description Retrieval</h2>
 </div>
 
+<p align="center">
 This feature fetches the description content directly from a model's web page.
+</p>
 
 <div align="center">
 <table>
@@ -121,10 +127,14 @@ This feature fetches the description content directly from a model's web page.
   <h2>Getting Started</h2>
 </div>
 
+<div align="center">
+
 ### Prerequisites
 
   - Python 3.8+
   - pip
+
+</div>
 
 ---
 
