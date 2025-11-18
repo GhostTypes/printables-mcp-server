@@ -5,7 +5,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/github/license/GhostTypes/printables-mcp-server?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/GhostTypes/printables-mcp-server?style=for-the-badge">
   <img src="https://img.shields.io/github/forks/GhostTypes/printables-mcp-server?style=for-the-badge">
 </p>
@@ -127,7 +126,11 @@ This feature fetches the description content directly from a model's web page.
   - Python 3.8+
   - pip
 
-### Installation
+---
+
+<div align="center">
+  <h2>Installation</h2>
+</div>
 
 1.  Clone the repository to your local machine.
 
